@@ -33,7 +33,8 @@ def buscar_pacientes():
                 "id": tr.get("data-atencion"),
                 "nombre": cols[4].get_text(strip=True),
                 "dni": cols[5].get_text(strip=True),
-                "os": cols[6].get_text(strip=True)
+                "os": cols[6].get_text(strip=True),
+                "medico": cols[2].get_text(strip=True)
             })
             
     return jsonify(pacientes)
